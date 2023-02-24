@@ -28,7 +28,6 @@ bool is_recorded(pattern pt)
 
 int main()
 {
-    //初始矩阵 目标矩阵
     array<int, 9> init = {4,1,4,2,1,2,1,3,1};
     int target = 3;
     bool solved = false;
@@ -50,7 +49,7 @@ int main()
             continue;
         if(is_match(puzzle_last->current,target))
         {
-            //输出结果
+            //print the solution
             stringstream result;
             while(puzzle_last->prev!= NULL)
             {
